@@ -1,0 +1,36 @@
+.tabs-box {
+  background-color: var(--el-bg-color);
+  .tabs-menu {
+    position: relative;
+    width: 100%;
+    .el-dropdown {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      .more-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 43px;
+      }
+    }
+
+    :deep(.el-tabs) {
+      .el-tabs__header {
+        box-sizing: border-box;
+        padding: 0 10px;
+        margin-bottom: 0;
+        .el-tabs__nav {
+          border: none;
+          .el-tabs__item{
+            border: none;
+          }
+        }
+      }
+    }
+    .tabs-icon {
+      margin-right: 5px;
+    }
+  }
+}
